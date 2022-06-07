@@ -161,18 +161,20 @@ h3 {
     margin-bottom: 100px;
 }
 
-.carousel__contenedor {
+.carousel__contenedor__music,
+.carousel__contenedor__corto,
+.carousel__contenedor__auvi {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.carousel__anterior,
-.carousel__anterior__img,
-.carousel__anterior__inte,
-.carousel__siguiente,
-.carousel__siguiente__img,
-.carousel__siguiente__inte {
+.carousel__anterior__music,
+.carousel__anterior__corto,
+.carousel__anterior__auvi,
+.carousel__siguiente__music,
+.carousel__siguiente__corto,
+.carousel__siguiente__auvi {
     border: none;
     background: none;
     font-size: 35px;
@@ -194,13 +196,15 @@ h3 {
     box-shadow: 0px 0px 10px var(--main-color-nav);
 }
 
-.carousel__lista {
+.carousel__lista__music,
+.carousel__lista__corto,
+.carousel__lista__auvi {
     display: flex;
 }
 
-.carousel__indicadores .glider-dot,
-.carousel__indicadores__img .glider-dot,
-.carousel__indicadores__inte .glider-dot {
+.carousel__indicadores__music .glider-dot,
+.carousel__indicadores__corto .glider-dot,
+.carousel__indicadores__auvi .glider-dot {
     display: block;
     width: 20px;
     height: 10px;
@@ -209,15 +213,15 @@ h3 {
     border-radius: 10px;
 }
 
-.carousel__indicadores .glider-dot:hover,
-.carousel__indicadores__img .glider-dot:hover,
-.carousel__indicadores__inte .glider-dot:hover {
+.carousel__indicadores__music .glider-dot:hover,
+.carousel__indicadores__corto .glider-dot:hover,
+.carousel__indicadores__auvi .glider-dot:hover {
     opacity: .5;
 }
 
-.carousel__indicadores .glider-dot.active,
-.carousel__indicadores__img .glider-dot.active,
-.carousel__indicadores__inte .glider-dot.active {
+.carousel__indicadores__music .glider-dot.active,
+.carousel__indicadores__corto .glider-dot.active,
+.carousel__indicadores__auvi .glider-dot.active {
     opacity: 1;
 }
 
@@ -263,6 +267,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     color: white;
 }
+
 .colon {
     text-align: center;
     font-weight: 400;
@@ -276,6 +281,7 @@ footer {
     font-family: "Bungee";
     font-size: 20px;
 }
+
 .colon img {
     width: 50px;
 }
@@ -318,7 +324,7 @@ footer {
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .redes_nav {
         display: none;
     }
